@@ -1,0 +1,14 @@
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+
+P {
+  display:none;
+}
+
+p:first-child{display:block;}

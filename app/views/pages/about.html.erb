@@ -1,1 +1,51 @@
-<h1>Welcome to the Yelp demo About's page</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<style>
+  .hlink {
+    color: maroon
+  }
+  
+  P {
+    display:none;
+  }
+
+  p:first-child {
+    display:block;
+  }
+
+</style>
+
+<body>
+    
+<script>
+$(document).ready(function() {
+  
+  $(".read-more").click(function() {
+    
+    $("p:gt(0)").slideToggle("slow", function() {
+    
+    var visible= $("p:gt(0)").is(":visible");
+    $(".read-more").text(visible? "Read Less":"Read More");
+    });
+  
+  });
+});
+</script>
+
+    
+  <article class="content">
+    <p>Test data A For dummy test for drop down expanded row for my customer databaseyypy</p>
+    <p class="hlink">Test data 2 For dummy test for drop down expanded row for my customer databaseyypy</p>
+    <p>Test data 3 For dummy test for drop down expanded row for my customer databaseyypy</p>
+    <p>Test data 4 For dummy test for drop down expanded row for my customer databaseyypy</p>
+    <p>Test data 5 For dummy test for drop down expanded row for my customer databaseyypy</p>
+    <div id="more" class="read-more">Read More</div>
+  </article>
+
+</body>
+
+</html>
